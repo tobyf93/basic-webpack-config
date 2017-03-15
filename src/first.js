@@ -1,3 +1,5 @@
+// ES6 module
+
 export function test1() {
 	console.log('hello from test1');
 }
