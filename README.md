@@ -33,7 +33,15 @@ This is the file that npm uses.  It should describe exactly how your project sho
     "babel-loader": "^6.4.0",
     "babel-preset-es2015": "^6.24.0",
     "css-loader": "^0.27.3",
+
+    /*
+    You don't have to supply version numbers for your dependencies.  In this case
+    i referenced github_account/project#branch.  The reason why i did this was
+    because the implementation of extract-text-webpack-plugin was discontinued
+    when webpack v2 got released.
+    */
     "extract-text-webpack-plugin": "webpack-contrib/extract-text-webpack-plugin#webpack-1",
+
     "file-loader": "^0.10.1",
     "style-loader": "^0.14.0",
     "webpack": "^1.13.2"
