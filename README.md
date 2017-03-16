@@ -11,14 +11,22 @@ This is the file that npm uses.  It should describe exactly how your project sho
   "license": "MIT",
 
   /*
-  Build our project in production mode.  Important thing to note here is that it references a module that is a project dependency (webpack).  Avoid doing scripts like "webpack -p" because that assumes that the developer has installed webpack globally.  It also means that they may end up using a version of webpack that the original author never intended on using.
+  Build our project in production mode.  Important thing to note here is that it
+  references a module that is a project dependency (webpack).  Avoid doing scripts
+  like "webpack -p" because that assumes that the developer has installed webpack
+  globally.  It also means that they may end up using a version of webpack that
+  the original author never intended on using.
   */
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js -p"
   },
 
   /*
-  Lists all 3rd party dependencies required by the project (including webpack).  These dependencies are fetched from the npm repository using the "npm install" command and placed in the node_modules directory (never commit this directory).  This method for pulling in dependencies ensures that you get the correct version of all the dependencies.
+  Lists all 3rd party dependencies required by the project (including webpack).  
+  These dependencies are fetched from the npm repository using the "npm install"
+  command and placed in the node_modules directory (never commit this directory).  
+  This method for pulling in dependencies ensures that you get the correct version
+  of all the dependencies.
   */
   "devDependencies": {
     "babel-core": "^6.24.0",
